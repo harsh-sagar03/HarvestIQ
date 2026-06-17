@@ -67,8 +67,4 @@ class Settings(BaseSettings):
 @lru_cache
 def get_settings() -> Settings:
     s = Settings()
-
-    print("SETTINGS FILE VALUE =", repr(s.openrouter_api_key))
-
-    print("SETTINGS GEMINI =", repr(s.gemini_api_key))
     return Settings()
