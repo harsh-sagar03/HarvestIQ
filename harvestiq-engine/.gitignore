@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment
+.env
+.env.local
+
+# Uploads
+data/uploads/
+
+# OS
+.DS_Store
+
+# Chroma generated database
+data/chroma/
