@@ -19,7 +19,7 @@
 
 ---
 
-# 🔗 Live Deployment
+# Live Deployment
 
 ### Frontend
 https://harvest-iq.vercel.app
@@ -29,7 +29,7 @@ https://harvestiq-10ww.onrender.com
 
 ---
 
-# 📖 Overview
+# Overview
 
 Modern agriculture faces numerous challenges including crop diseases, unpredictable weather, inefficient resource allocation, delayed interventions, and limited access to actionable insights.
 
@@ -37,21 +37,21 @@ HarvestIQ addresses these challenges through a unified intelligence platform tha
 
 The platform integrates:
 
-- 🦠 AI Disease Detection
-- 🌦 Weather Intelligence
-- 🌱 Farm Health Monitoring
-- 📊 Profitability Analytics
-- 🚨 SOS Emergency Assistance
-- 🛰 Disease Outbreak Surveillance
-- 🤖 Smart Advisory Generation
-- 📈 Farm Operations Intelligence
-- 🧪 Agricultural Simulation Engine
+- AI Disease Detection
+- Weather Intelligence
+- Farm Health Monitoring
+- Profitability Analytics
+- SOS Emergency Assistance
+- Disease Outbreak Surveillance
+- Smart Advisory Generation
+- Farm Operations Intelligence
+- Agricultural Simulation Engine
 
 into a single farmer-centric ecosystem.
 
 ---
 
-# 📸 Screenshots
+# Screenshots
 
 ## Dashboard Overview
 
@@ -93,9 +93,9 @@ into a single farmer-centric ecosystem.
 
 ---
 
-# ✨ Core Features
+# Core Features
 
-## 🌾 Smart Farm Dashboard
+## Smart Farm Dashboard
 
 Comprehensive farm monitoring dashboard providing real-time visibility into farm performance and health.
 
@@ -111,7 +111,7 @@ Comprehensive farm monitoring dashboard providing real-time visibility into farm
 
 ---
 
-## 🦠 AI Disease Detection
+## AI Disease Detection
 
 Identify crop diseases using AI-powered image analysis.
 
@@ -126,7 +126,7 @@ Identify crop diseases using AI-powered image analysis.
 
 ---
 
-## 🚨 SOS Emergency Assistance
+## SOS Emergency Assistance
 
 Emergency response workflow for critical farm situations.
 
@@ -140,7 +140,7 @@ Emergency response workflow for critical farm situations.
 
 ---
 
-## 🌦 Weather Intelligence
+## Weather Intelligence
 
 Weather-driven agricultural planning system.
 
@@ -154,7 +154,7 @@ Weather-driven agricultural planning system.
 
 ---
 
-## 📊 Profitability Analytics
+## Profitability Analytics
 
 Analyze financial performance across farm operations.
 
@@ -169,7 +169,7 @@ Analyze financial performance across farm operations.
 
 ---
 
-## 🛰 Disease Outbreak Radar
+## Disease Outbreak Radar
 
 Monitor disease outbreaks across nearby regions.
 
@@ -183,7 +183,7 @@ Monitor disease outbreaks across nearby regions.
 
 ---
 
-## 🤖 AI Advisory Engine
+## AI Advisory Engine
 
 Generate actionable agricultural recommendations.
 
@@ -198,7 +198,7 @@ Generate actionable agricultural recommendations.
 
 ---
 
-## 🧪 Agricultural Simulation Engine
+## Agricultural Simulation Engine
 
 Evaluate agricultural decisions before implementation.
 
@@ -212,7 +212,7 @@ Evaluate agricultural decisions before implementation.
 
 ---
 
-# 🏗 System Architecture
+# System Architecture
 
 ```text
                            ┌─────────────────────┐
@@ -245,7 +245,7 @@ Evaluate agricultural decisions before implementation.
 
 ---
 
-# 🛠 Technology Stack
+# Technology Stack
 
 ## Frontend
 
@@ -282,7 +282,7 @@ Evaluate agricultural decisions before implementation.
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```bash
 HarvestIQ
@@ -315,7 +315,7 @@ HarvestIQ
 
 ---
 
-# 🚀 Local Setup
+# Local Setup
 
 ## Clone Repository
 
@@ -387,7 +387,7 @@ http://localhost:8000
 
 ---
 
-# 🔑 Environment Variables
+# Environment Variables
 
 ## Backend
 
@@ -415,7 +415,7 @@ BACKEND_URL=
 
 ---
 
-# 📊 Major Modules
+# Major Modules
 
 | Module | Description |
 |----------|----------|
@@ -430,7 +430,7 @@ BACKEND_URL=
 
 ---
 
-# 🎯 Problem Statement
+# Problem Statement
 
 Farmers often rely on fragmented systems, delayed information, and manual processes for critical agricultural decisions.
 
@@ -447,7 +447,7 @@ HarvestIQ addresses these challenges through an integrated intelligence platform
 
 ---
 
-# 🌍 Impact
+# Impact
 
 HarvestIQ aims to:
 
@@ -461,7 +461,7 @@ HarvestIQ aims to:
 
 ---
 
-# 🔮 Future Roadmap
+# Future Roadmap
 
 ### Planned Enhancements
 
@@ -490,7 +490,7 @@ GitHub:
 https://github.com/harsh-sagar03
 ---
 
-# ⭐ Support
+# Support
 
 If you found this project useful:
 
