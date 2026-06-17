@@ -1,284 +1,512 @@
-# HarvestIQ
+<div align="center">
 
-Deterministic agricultural intelligence platform — Day 1 foundation (Authentication + Farmer Onboarding).
+# 🌾 HarvestIQ
 
-## Repository structure
+### AI-Powered Farm Intelligence Platform for Smarter Agricultural Decision Making
 
-```text
-HARVESTIQ/
-├── harvestiq-engine/     # FastAPI backend
-├── harvestiq-client/     # Next.js frontend (PWA-ready scaffold)
-├── architecture.md
-├── roadmap.md
-└── blueprint.md
-```
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![MongoDB Atlas](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)](https://www.mongodb.com/)
+[![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-blue)](https://openrouter.ai/)
+[![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?logo=vercel)](https://vercel.com/)
+[![Render](https://img.shields.io/badge/Backend-Render-46E3B7?logo=render)](https://render.com/)
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://python.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://typescriptlang.org/)
 
-## Prerequisites
+**An end-to-end AI-powered agricultural intelligence platform that combines disease detection, weather intelligence, farm health monitoring, profitability analytics, and emergency response into a unified decision-support system for farmers.**
 
-- Python 3.12+
-- Node.js 20+
-- MongoDB Atlas cluster (or local MongoDB)
-
-## Environment variables
-
-### Backend (`harvestiq-engine/.env`)
-
-Copy from `.env.example`:
-
-```env
-MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
-MONGODB_DB_NAME=harvestiq
-JWT_SECRET_KEY=replace-with-a-long-random-secret
-JWT_ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=15
-REFRESH_TOKEN_EXPIRE_DAYS=7
-CORS_ORIGINS=http://localhost:3000
-COOKIE_SECURE=false
-COOKIE_SAMESITE=lax
-ENVIRONMENT=development
-```
-
-### Frontend (`harvestiq-client/.env.local`)
-
-```env
-BACKEND_URL=http://localhost:8000
-```
-
-The Next.js dev server proxies `/api/*` to the FastAPI backend so HttpOnly refresh cookies remain same-origin.
-
-## Quick start (macOS)
-
-### One-time setup
-
-```bash
-# 1. Backend — create venv, install deps, create .env
-cd /Users/vishaljaiswal/Desktop/HARVESTIQ/harvestiq-engine
-./scripts/setup.sh
-
-# 2. Edit .env and set your MongoDB Atlas URI (required)
-#    open -e .env
-
-# 3. Frontend — install deps
-cd /Users/vishaljaiswal/Desktop/HARVESTIQ/harvestiq-client
-npm install
-cp .env.local.example .env.local
-```
-
-### Start the app (two terminals)
-
-**Terminal 1 — Backend:**
-```bash
-cd /Users/vishaljaiswal/Desktop/HARVESTIQ/harvestiq-engine
-./scripts/start.sh
-```
-
-**Terminal 2 — Frontend:**
-```bash
-cd /Users/vishaljaiswal/Desktop/HARVESTIQ/harvestiq-client
-./scripts/start.sh
-```
-
-- Backend API docs: http://localhost:8000/docs
-- Frontend app: http://localhost:3000
+</div>
 
 ---
 
-## Setup (manual alternative)
+# 🔗 Live Deployment
 
-### 1. Backend
+### Frontend
+https://harvest-iq.vercel.app
 
-```bash
-cd harvestiq-engine
-python3 -m venv .venv
-source .venv/bin/activate          # REQUIRED — activates the virtual environment
-pip install -r requirements.txt
-cp .env.example .env               # then edit with your MongoDB Atlas URI
-python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+### Backend API
+https://harvestiq-10ww.onrender.com
+
+---
+
+# 📖 Overview
+
+Modern agriculture faces numerous challenges including crop diseases, unpredictable weather, inefficient resource allocation, delayed interventions, and limited access to actionable insights.
+
+HarvestIQ addresses these challenges through a unified intelligence platform that helps farmers make faster and more informed decisions using artificial intelligence, real-time analytics, and agricultural intelligence systems.
+
+The platform integrates:
+
+- 🦠 AI Disease Detection
+- 🌦 Weather Intelligence
+- 🌱 Farm Health Monitoring
+- 📊 Profitability Analytics
+- 🚨 SOS Emergency Assistance
+- 🛰 Disease Outbreak Surveillance
+- 🤖 Smart Advisory Generation
+- 📈 Farm Operations Intelligence
+- 🧪 Agricultural Simulation Engine
+
+into a single farmer-centric ecosystem.
+
+---
+
+# 📸 Screenshots
+
+## Dashboard Overview
+
+<p align="center">
+  <img src="docs/screenshots/dashboard1.png" width="100%">
+</p>
+
+---
+
+## Farm Intelligence Dashboard
+
+<p align="center">
+  <img src="docs/screenshots/dashboard2.png" width="100%">
+</p>
+
+---
+
+## Analytics & Monitoring
+
+<p align="center">
+  <img src="docs/screenshots/dashboard3.png" width="100%">
+</p>
+
+---
+
+## AI Disease Detection
+
+<p align="center">
+  <img src="docs/screenshots/disease-detection.png" width="100%">
+</p>
+
+---
+
+## SOS Emergency Response
+
+<p align="center">
+  <img src="docs/screenshots/sos.png" width="100%">
+</p>
+
+---
+
+# ✨ Core Features
+
+## 🌾 Smart Farm Dashboard
+
+Comprehensive farm monitoring dashboard providing real-time visibility into farm performance and health.
+
+### Features
+
+- Farm health overview
+- Crop monitoring
+- Weather intelligence
+- Health card generation
+- Farm stress analysis
+- Productivity insights
+- Season performance tracking
+
+---
+
+## 🦠 AI Disease Detection
+
+Identify crop diseases using AI-powered image analysis.
+
+### Capabilities
+
+- Crop image upload
+- Vision-based disease diagnosis
+- Confidence scoring
+- Risk assessment
+- Treatment recommendations
+- Early intervention support
+
+---
+
+## 🚨 SOS Emergency Assistance
+
+Emergency response workflow for critical farm situations.
+
+### Capabilities
+
+- Emergency alerts
+- Priority notifications
+- Rapid escalation workflows
+- Crisis response support
+- Emergency decision assistance
+
+---
+
+## 🌦 Weather Intelligence
+
+Weather-driven agricultural planning system.
+
+### Features
+
+- Forecast monitoring
+- Temperature tracking
+- Rainfall predictions
+- Weather-based recommendations
+- Crop-specific advisories
+
+---
+
+## 📊 Profitability Analytics
+
+Analyze financial performance across farm operations.
+
+### Includes
+
+- Revenue analysis
+- Expense tracking
+- Profit calculations
+- Seasonal comparisons
+- Crop profitability insights
+- Financial dashboards
+
+---
+
+## 🛰 Disease Outbreak Radar
+
+Monitor disease outbreaks across nearby regions.
+
+### Features
+
+- Disease surveillance
+- Risk assessment
+- Regional outbreak monitoring
+- Early warning indicators
+- Preventive recommendations
+
+---
+
+## 🤖 AI Advisory Engine
+
+Generate actionable agricultural recommendations.
+
+### Advisory Areas
+
+- Irrigation planning
+- Fertilizer management
+- Disease prevention
+- Weather adaptation
+- Crop management
+- Risk mitigation
+
+---
+
+## 🧪 Agricultural Simulation Engine
+
+Evaluate agricultural decisions before implementation.
+
+### Simulation Areas
+
+- Resource allocation
+- Crop planning
+- Yield projections
+- Risk analysis
+- Operational optimization
+
+---
+
+# 🏗 System Architecture
+
+```text
+                           ┌─────────────────────┐
+                           │       Farmer        │
+                           └──────────┬──────────┘
+                                      │
+                                      ▼
+
+                     ┌─────────────────────────────────┐
+                     │        Next.js Frontend         │
+                     │            (Vercel)            │
+                     └──────────────┬──────────────────┘
+                                    │
+                                    ▼
+
+                     ┌─────────────────────────────────┐
+                     │         FastAPI Backend         │
+                     │            (Render)            │
+                     └──────────────┬──────────────────┘
+                                    │
+            ┌───────────────────────┼───────────────────────┐
+            │                       │                       │
+            ▼                       ▼                       ▼
+
+ ┌──────────────────┐   ┌──────────────────┐   ┌──────────────────┐
+ │  MongoDB Atlas   │   │   OpenRouter AI  │   │  Weather APIs    │
+ │  Farm Database   │   │ Disease Models   │   │ Forecast Engine  │
+ └──────────────────┘   └──────────────────┘   └──────────────────┘
 ```
 
-> **Why `uvicorn` was not found:** `uvicorn` is installed inside `.venv`, not globally.
-> You must either `source .venv/bin/activate` first, or use `.venv/bin/python -m uvicorn ...`
-> (the `./scripts/start.sh` script does this for you).
+---
 
-### 2. Frontend
+# 🛠 Technology Stack
+
+## Frontend
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Zustand
+- Progressive Web App (PWA)
+
+## Backend
+
+- FastAPI
+- Python 3.12
+- Pydantic
+- JWT Authentication
+- Motor (MongoDB Driver)
+
+## Database
+
+- MongoDB Atlas
+
+## AI & Intelligence Layer
+
+- OpenRouter
+- Vision Models
+- Agricultural Advisory Generation
+- Disease Detection Engine
+
+## Deployment
+
+- Vercel
+- Render
+
+---
+
+# 📂 Project Structure
+
+```bash
+HarvestIQ
+│
+├── harvestiq-client/
+│   ├── src/
+│   ├── public/
+│   ├── components/
+│   ├── hooks/
+│   └── stores/
+│
+├── harvestiq-engine/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── core/
+│   │   ├── models/
+│   │   ├── services/
+│   │   └── integrations/
+│   │
+│   ├── data/
+│   └── tests/
+│
+├── docs/
+│   └── screenshots/
+│
+├── architecture.md
+├── roadmap.md
+└── README.md
+```
+
+---
+
+# 🚀 Local Setup
+
+## Clone Repository
+
+```bash
+git clone https://github.com/harsh-sagar03/HarvestIQ.git
+
+cd HarvestIQ
+```
+
+---
+
+## Frontend Setup
 
 ```bash
 cd harvestiq-client
+
 npm install
-cp .env.local.example .env.local
+
 npm run dev
+```
+
+Frontend:
+
+```bash
+http://localhost:3000
 ```
 
 ---
 
-## Troubleshooting
-
-### `zsh: command not found: uvicorn`
-
-The virtual environment is not activated and `uvicorn` is not on your global PATH.
-
-**Fix (pick one):**
-```bash
-cd harvestiq-engine
-source .venv/bin/activate
-python -m uvicorn app.main:app --reload --port 8000
-```
-Or simply run: `./scripts/start.sh`
-
-### `ServerSelectionTimeoutError: localhost:27017 Connection refused`
-
-MongoDB is not running locally. Your `.env` has `MONGODB_URI=mongodb://localhost:27017` but no local MongoDB server is started.
-
-**Fix:** Set `MONGODB_URI` in `harvestiq-engine/.env` to your **MongoDB Atlas** connection string:
-```env
-MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
-```
-In Atlas: Network Access → allow your IP (or `0.0.0.0/0` for dev).
-
-### `SSL: CERTIFICATE_VERIFY_FAILED` (MongoDB Atlas on macOS)
-
-**Cause:** Python from [python.org](https://www.python.org) on macOS (including 3.14) ships without CA certificates until you install them. This is **not** a Motor/PyMongo bug and **not** an Atlas IP issue.
-
-**Safest fix (already applied in code):** The backend uses Mozilla's CA bundle via `certifi` — SSL verification stays enabled.
+## Backend Setup
 
 ```bash
 cd harvestiq-engine
-./scripts/setup.sh          # installs certifi
-./scripts/start.sh
+
+python -m venv .venv
 ```
 
-**Also run once on macOS (python.org installer):**
-```bash
-/Applications/Python\ 3.14/Install\ Certificates.command
-```
+Activate environment:
 
-**Recommended for production stability:** Use Python **3.12** instead of 3.14:
+### macOS/Linux
+
 ```bash
-brew install python@3.12
-cd /Users/vishaljaiswal/Desktop/HARVESTIQ/harvestiq-engine
-rm -rf .venv
-/opt/homebrew/bin/python3.12 -m venv .venv    # Intel Mac: use `which python3.12`
 source .venv/bin/activate
+```
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
-./scripts/start.sh
 ```
 
-### `bad auth : authentication failed` (after SSL is fixed)
+Start backend:
 
-Atlas reached successfully but username/password is wrong.
+```bash
+uvicorn app.main:app --reload
+```
 
-1. Atlas → **Database Access** → confirm user exists
-2. Reset password if unsure
-3. Update `MONGODB_URI` in `.env` with the correct credentials
-4. URL-encode special characters in passwords (`@` → `%40`, `#` → `%23`)
+Backend:
 
-**Correct URI format:**
+```bash
+http://localhost:8000
+```
+
+---
+
+# 🔑 Environment Variables
+
+## Backend
+
 ```env
-MONGODB_URI=mongodb+srv://<user>:<password>@cluster0.xxxxx.mongodb.net/harvestiq?retryWrites=true&w=majority
-MONGODB_DB_NAME=harvestiq
+MONGODB_URI=
+
+MONGODB_DB_NAME=
+
+JWT_SECRET_KEY=
+
+OPENROUTER_API_KEY=
+
+OPEN_METEO_BASE_URL=
+
+ENVIRONMENT=production
 ```
 
-### `.zshrc: unmatched "`
+---
 
-This is a **shell config issue**, not a HarvestIQ bug. Your `~/.zshrc` line 4 has a corrupted `PATH` export (missing opening `export PATH="`). It prints on every new terminal but does not block the project if you run commands directly.
+## Frontend
 
-**Fix (optional):** Open `~/.zshrc`, find the broken line starting with `m/Cryptexes/...`, and restore it to a valid `export PATH="..."` line or remove it.
-
-## MongoDB collections (Day 1)
-
-| Collection | Purpose |
-|---|---|
-| `users` | Identity, bcrypt password hash, onboarding flag |
-| `sessions` | Hashed refresh tokens with TTL |
-| `farms` | Farm profile (state, district, optional GeoJSON boundary) |
-| `crop_cycles` | Active crop stub created at onboarding |
-
-## API endpoints (Day 1)
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/health` | No | Health check |
-| `POST` | `/api/v1/auth/register` | No | Register farmer account |
-| `POST` | `/api/v1/auth/login` | No | Login; sets HttpOnly refresh cookie |
-| `POST` | `/api/v1/auth/refresh` | Cookie | Rotate access token |
-| `POST` | `/api/v1/auth/logout` | Cookie | Revoke session |
-| `GET` | `/api/v1/users/me` | Bearer | Current user profile |
-| `PUT` | `/api/v1/users/profile` | Bearer | Update name / language |
-| `POST` | `/api/v1/onboarding` | Bearer | Atomic farm + crop cycle setup |
-| `GET` | `/api/v1/farms/me` | Bearer | Farm and crop profile |
-
-## Authentication model
-
-- **Access token**: JWT returned in JSON, held in browser memory only (15 min).
-- **Refresh token**: JWT in HttpOnly cookie (`harvestiq_refresh_token`, path `/api/v1/auth`).
-- **Passwords**: bcrypt via `passlib`.
-
-## Testing steps
-
-### Manual UI flow
-
-1. Start backend and frontend.
-2. Open http://localhost:3000 → redirects to `/auth`.
-3. Register a new account (name, phone, password).
-4. Sign in with the same credentials.
-5. Complete onboarding (crop, state, district, sowing date).
-6. Confirm dashboard shows user and farm details.
-7. Sign out and sign in again — session should restore via refresh cookie.
-
-### API checks (curl)
-
-```bash
-# Health
-curl http://localhost:8000/health
-
-# Register
-curl -X POST http://localhost:8000/api/v1/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{"phone":"+919876543210","password":"securepass","name":"Test Farmer"}'
-
-# Login (save cookies)
-curl -c cookies.txt -X POST http://localhost:8000/api/v1/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"phone":"+919876543210","password":"securepass"}'
-
-# Refresh
-curl -b cookies.txt -c cookies.txt -X POST http://localhost:8000/api/v1/auth/refresh
-
-# Onboarding (replace TOKEN)
-curl -X POST http://localhost:8000/api/v1/onboarding \
-  -H "Authorization: Bearer <access_token>" \
-  -H "Content-Type: application/json" \
-  -d '{"crop_type":"Wheat","state":"Punjab","district":"Ludhiana","sowing_date":"2026-05-01"}'
-
-# Unauthorized farm access
-curl -i http://localhost:8000/api/v1/farms/me
+```env
+BACKEND_URL=
 ```
 
-### Verification checklist
+---
 
-- [ ] Passwords stored as bcrypt hashes in MongoDB (not plaintext)
-- [ ] `GET /api/v1/farms/me` without token returns `401`
-- [ ] Duplicate phone registration returns `409`
-- [ ] Future sowing date returns `422`
-- [ ] Login rate limit triggers after 5 attempts in 15 minutes
+# 📊 Major Modules
 
-## Day 2 setup (after Day 1)
+| Module | Description |
+|----------|----------|
+| Dashboard | Unified farm monitoring |
+| Disease Detection | AI-based crop disease diagnosis |
+| Advisory Engine | Smart agricultural recommendations |
+| Weather Intelligence | Forecasting and weather analytics |
+| Disease Radar | Regional disease surveillance |
+| Simulator | Agricultural scenario simulation |
+| Profitability | Farm financial analytics |
+| SOS System | Emergency response workflows |
 
-```bash
-cd harvestiq-engine
-./scripts/setup.sh
-.venv/bin/python scripts/seed_crop_characteristics.py
-.venv/bin/python scripts/backfill_farm_locations.py   # existing Day 1 farms only
-./scripts/start.sh
-```
+---
 
-Day 2 API endpoints:
-- `GET /api/v1/weather/forecast?farm_id={id}`
-- `POST /api/v1/crop-cycles`
-- `GET /api/v1/crop-cycles/{id}/stage`
+# 🎯 Problem Statement
 
-Run backend tests: `cd harvestiq-engine && .venv/bin/pytest`
+Farmers often rely on fragmented systems, delayed information, and manual processes for critical agricultural decisions.
 
-## Day 3+ (not implemented)
+This can result in:
 
-FSI, RAG, advisory, disease detection, and offline sync are not yet implemented.
+- Late disease detection
+- Reduced productivity
+- Increased operational costs
+- Resource inefficiencies
+- Poor profitability visibility
+- Delayed emergency response
+
+HarvestIQ addresses these challenges through an integrated intelligence platform that combines AI, analytics, and agricultural expertise.
+
+---
+
+# 🌍 Impact
+
+HarvestIQ aims to:
+
+- Improve crop health outcomes
+- Enable data-driven farming
+- Reduce disease-related losses
+- Enhance profitability
+- Improve farm resilience
+- Support faster emergency response
+- Deliver actionable agricultural insights
+
+---
+
+# 🔮 Future Roadmap
+
+### Planned Enhancements
+
+- Satellite imagery integration
+- IoT sensor support
+- Mobile application
+- Multilingual voice assistant
+- Government scheme intelligence
+- Yield prediction models
+- Precision irrigation optimization
+- Market intelligence forecasting
+
+---
+
+Responsibilities:
+
+- Product Design
+- System Architecture
+- Frontend Development
+- Backend Development
+- AI Integration
+- Database Design
+- Deployment & Infrastructure
+
+GitHub:
+https://github.com/harsh-sagar03
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+- Star the repository
+- Fork the project
+- Open issues
+- Suggest improvements
+
+---
+
+<div align="center">
+
+### 🌾 HarvestIQ
+
+Building the Future of Intelligent Agriculture
+
+Made with ❤️ 
+
+</div>
