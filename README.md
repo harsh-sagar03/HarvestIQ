@@ -4,7 +4,7 @@
 
 ### AI-Powered Farm Intelligence Platform for Smarter Agricultural Decision Making
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js)](https://nextjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![MongoDB Atlas](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)](https://www.mongodb.com/)
 [![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-blue)](https://openrouter.ai/)
