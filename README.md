@@ -193,7 +193,7 @@ Monitor disease outbreaks across nearby regions.
 
 ---
 
-## AI Advisory Engine
+## Advisory Engine
 
 Generate actionable agricultural recommendations.
 
