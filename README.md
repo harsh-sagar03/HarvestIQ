@@ -130,6 +130,16 @@ Identify crop diseases using AI-powered image analysis.
 
 Emergency response workflow for critical farm situations.
 
+## Important Notes
+
+### SOS Emergency Feature
+
+The SOS module is integrated with Twilio for SMS/call notifications.
+
+**Current Limitation:** Due to Twilio trial account restrictions, SOS alerts can currently be delivered only to phone numbers that have been verified in the Twilio console. Unverified numbers will not receive SMS/call notifications.
+
+For hackathon evaluation purposes, the feature is fully implemented and functional, but successful message delivery is limited to Twilio-verified recipient numbers.
+
 ### Capabilities
 
 - Emergency alerts
